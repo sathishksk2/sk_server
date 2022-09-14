@@ -11,6 +11,9 @@ jobs:
     steps:
        - name: checkout alexa-hosting
          uses: actions/checkout@main
+         
+       - name: Cleanup workspace
+         uses: rokibhasansagar/slimhub_actions@main
        
        - uses: styfle/cancel-workflow-action@0.9.0
          name: "cancel duplicate workflow runs"
